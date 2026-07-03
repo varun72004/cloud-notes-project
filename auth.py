@@ -41,12 +41,26 @@ def create_access_token(data: dict):
     
     return token
 
-def verify_token(token: str):
+from fastapi import Depends
+from fastapi.security import HTTPBearer, HTTPAuthorizationCredentials
+security = HTTPBearer()
 
+
+def verify_token(
+    credentials: HTTPAuthorizationCredentials = Depends(security)):
     try:
+        token = credentials.credentials
 
-        payload = jwt.decode(token,SECRET_KEY, algorithms=[ALGORITHM])
-        
-        return payload        
-    except JWTError:    
-        raise HTTPException(status_code=401, detail="Invalid Token")
+        payload = jwt.decode(
+            token,
+            SECRET_KEY,
+            algorithms=[ALGORITHM]
+        )
+
+        return payload
+
+    except JWTError:
+        raise HTTPException(
+            status_code=401,
+            detail="Invalid Token"
+        )

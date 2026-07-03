@@ -60,18 +60,20 @@ def login(user: UserLogin, db: Session = Depends(get_db)):
     
     
 # function to get current user
-def get_current_user(authorization: str = Header(...),db: Session = Depends(get_db)):
-
-    token = authorization.replace("Bearer ", "")
-
-    payload = verify_token(token)
-
-    if payload is None:
-        raise HTTPException(401, "Invalid Token")
+def get_current_user(
+    payload=Depends(verify_token),
+    db: Session = Depends(get_db)
+):
 
     user = db.query(Users).filter(
         Users.id == payload["user_id"]
     ).first()
+
+    if user is None:
+        raise HTTPException(
+            status_code=401,
+            detail="User not found"
+        )
 
     return user
 
