@@ -249,8 +249,7 @@ The API can be tested using:
 
 ## Create Note
 
-![alt text](images/create-note.png)
-
+images/create-note.png
 ---
 
 ## View Notes
