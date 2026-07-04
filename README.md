@@ -237,30 +237,30 @@ The API can be tested using:
 
 ## User Registration
 
-![alt text](<images/register.png>)
+![alt text](images/register.png)
 
 ---
 
 ## Login
 
-![alt text](<images/login.png>)
+![alt text](images/login.png)
 
 ---
 
 ## Create Note
 
-![alt text](<images/create-note.png>)
+![alt text](images/create-note.png)
 
 ---
 
 ## View Notes
 
-![alt text](<images/view-notes.png>)
+![alt text](images/view-notes.png)
 ---
 
 ## Neon Database
 
-![alt text](<images/neon-database.png>)
+![alt text](images/neon-database.png)
 
 ---
 
