@@ -249,7 +249,7 @@ The API can be tested using:
 
 ## Create Note
 
-images/create-note.png
+![Create Note](images/create-note.png)
 ---
 
 ## View Notes
