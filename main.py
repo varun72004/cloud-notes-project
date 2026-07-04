@@ -10,11 +10,89 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="Cloud Notes API")
 
+# -----------------------------------------------------------------------------------
+from fastapi.responses import HTMLResponse
+
+@app.get("/", response_class=HTMLResponse)
+def home():
+    return """
+    <html>
+    <head>
+        <title>Cloud Notes API</title>
+
+        <style>
+            body{
+                background:#0f172a;
+                color:white;
+                font-family:Arial;
+                text-align:center;
+                padding-top:80px;
+            }
+
+            h1{
+                color:#38bdf8;
+                font-size:55px;
+            }
+
+            p{
+                font-size:22px;
+            }
+
+            a{
+                color:#22c55e;
+                text-decoration:none;
+                font-size:20px;
+            }
+
+            .card{
+                width:700px;
+                margin:auto;
+                background:#1e293b;
+                padding:40px;
+                border-radius:15px;
+                box-shadow:0px 0px 20px rgba(0,0,0,.3);
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="card">
+
+            <h1>☁️ Cloud Notes API</h1>
+
+            <p>Secure Cloud Based Notes REST API</p>
+
+            <hr>
+
+            <h3>Technology Stack</h3>
+
+            <p>
+            FastAPI • PostgreSQL • JWT • SQLAlchemy • Render • Neon
+            </p>
+
+            <br>
+
+            <a href="/docs">
+            🚀 Open Swagger Documentation
+            </a>
+
+        </div>
+
+    </body>
+
+    </html>
+    """
+
+# --------------------------------------------------------------------------------------
+
+
 # register
 @app.post("/register")
 def register(user: UserCreate, db: Session = Depends(get_db)):
 
     existing = db.query(Users).filter(
+        
         Users.email == user.email
     ).first()
 
