@@ -260,7 +260,7 @@ The API can be tested using:
 
 ## Neon Database
 
-![alt text](<images/Screenshot 2026-07-04 164051.png>)
+https://github.com/varun72004/cloud-notes-project/blob/main/images/Screenshot%202026-07-04%20164051.png
 
 ---
 
