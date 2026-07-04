@@ -200,10 +200,13 @@ ACCESS_TOKEN_EXPIRE_MINUTES=60
 uvicorn main:app --reload
 ```
 
-Open
+Open:
 
-```
-https://cloud-notes-project-r72e.onrender.com/```
+https://cloud-notes-project-r72e.onrender.com/
+
+Swagger:
+
+https://cloud-notes-project-r72e.onrender.com/docs
 
 ---
 
