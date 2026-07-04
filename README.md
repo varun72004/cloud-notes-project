@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="images/banner.png" alt="Cloud Notes API Banner" width="100%">
+</p>
+
 # ☁️ Cloud Notes API
 
 A secure, cloud-based REST API for managing personal notes, built with **FastAPI**, **PostgreSQL**, and **JWT Authentication**. The application is deployed on **Render** and uses **Neon PostgreSQL** as the cloud database.
