@@ -231,36 +231,36 @@ The API can be tested using:
 
 ## Swagger Documentation
 
-![alt text](<images/Screenshot 2026-07-04 165735.png>)
+![alt text](<images/swagger-ui.png>)
 
 ---
 
 ## User Registration
 
-![alt text](<images/Screenshot 2026-07-04 165558.png>)
+![alt text](<images/register.png>)
 
 ---
 
 ## Login
 
-![alt text](<images/Screenshot 2026-07-04 165158.png>)
+![alt text](<images/login.png>)
 
 ---
 
 ## Create Note
 
-![alt text](<images/Screenshot 2026-07-04 165016.png>)
+![alt text](<images/create-note.png>)
 
 ---
 
 ## View Notes
 
-![alt text](<images/Screenshot 2026-07-04 164743.png>)
+![alt text](<images/view-notes.png>)
 ---
 
 ## Neon Database
 
-https://github.com/varun72004/cloud-notes-project/blob/main/images/Screenshot%202026-07-04%20164051.png
+![alt text](<images/neon-database.png>)
 
 ---
 
