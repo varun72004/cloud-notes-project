@@ -229,38 +229,39 @@ The API can be tested using:
 
 # 📸 Screenshots
 
-## Swagger Documentation
+## 🚀 Swagger Documentation
 
-![alt text](<images/swagger-ui.png>)
-
----
-
-## User Registration
-
-![alt text](images/register.png)
+![Swagger UI](./images/swagger-ui.png)
 
 ---
 
-## Login
+## 👤 User Registration
 
-![alt text](images/login.png)
+![User Registration](./images/register.png)
 
 ---
 
-## Create Note
+## 🔐 Login
 
-![Create Note](images/create-note.png)
+![Login](./images/login.png)
+
 ---
 
-## View Notes
+## 📝 Create Note
 
-![alt text](images/view-notes.png)
+![Create Note](./images/create-note.png)
+
 ---
 
-## Neon Database
+## 📋 View Notes
 
-![alt text](images/neon-database.png)
+![View Notes](./images/view-notes.png)
 
+---
+
+## ☁️ Neon Database
+
+![Neon Database](./images/neon-database.png)
 ---
 
 # 🔒 Security Features
